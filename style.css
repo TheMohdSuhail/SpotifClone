@@ -4,11 +4,9 @@ body {
     padding: 0;
     color: white;
     overflow: hidden;
-
 }
 
 .main {
-    /* background-color: black; */
     display: flex;
     height: 100vh;
     padding: 0.5rem;
@@ -19,18 +17,14 @@ body {
     width: 340px;
     border-radius: 1rem;
     margin-right: 0.5rem;
-
 }
 
 .main-content {
     background-color: #121212;
-
     flex: 1;
-    /* baki bachi hue jaha ho lene ke liye flex 1 ka use kiya jaga hai*/
     border-radius: 1rem;
     overflow: auto;
-    padding:0 1.5rem 0 1.5rem;
-
+    padding: 0 1.5rem 0 1.5rem;
 }
 
 .music-player {
@@ -40,7 +34,6 @@ body {
     bottom: 0;
     width: 100%;
     height: 72px;
- 
 }
 
 a {
@@ -65,7 +58,6 @@ a {
 }
 
 .nav-option:hover {
-
     opacity: 1;
 }
 
@@ -75,7 +67,7 @@ a {
 
 .nav-option a {
     font-size: 1rem;
-    margin-left: 1rem
+    margin-left: 1rem;
 }
 
 .library {
@@ -83,7 +75,7 @@ a {
     border-radius: 1rem;
     height: 100%;
     margin-top: 0.5rem;
-    padding: 0.5rem 0.75rem;
+    padding: 0.75rem;
 }
 
 .options {
@@ -92,207 +84,196 @@ a {
     align-items: center;
 }
 
-.lib-option img {
-    height: 1.25rem;
-    width: 1.25rem;
-
-}
-
-.icons {
-    font-size: 1.25rem;
-    opacity: 0.7;
-    margin-right: 1rem;
-    display: flex;
-}
-
 .icons i {
-    opacity: 0.7;
-    margin-right: 1rem;
+    background-color: #b3b3b3;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+    margin-left: 0.5rem;
 }
 
-.icons i:hover {
+.lib-option {
+    line-height: 2rem;
+    opacity: 0.7;
+}
+
+.lib-option:hover {
     opacity: 1;
 }
 
+.lib-option img {
+    height: 1.7rem;
+}
+
+.lib-option a {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.lib-box {
+    margin-top: 1.5rem;
+}
+
 .box {
-    background-color: #232323;
-    height: 8rem;
-    border-radius: 0.75rem;
-    margin: 0.75rem 0 1.75rem 0;
-    padding: 0.75rem 1rem;
+    border: 1px solid #4b4b4b;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    line-height: 1.8rem;
 }
 
 .box-p1 {
-    font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .box-p2 {
-    font-size: 0.85rem;
-    opacity: 0.9;
+    font-size: 0.8rem;
+    opacity: 0.8;
 }
 
 .badge {
     background-color: white;
-    border: none;
-    border-radius: 100px;
-    padding: 0.25rem 1rem;
-    font-weight: 700;
-    margin-top: 0.5rem;
-    height: 2rem;
-    width: fit-content;
-
-}
-
-.dark-badge {
-    background-color: black;
-    color: white;
-}
-
-.sticky-nav {
-    position: sticky;
-    top: 0;
-    background-color: #121212;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0 1rem 0;
-    z-index:10;
-
-
-}
-
-.sticky-nav img {
-    height: 2rem;
-    width: 2rem;
-}
-
-.sticky-nav-icons {
-    margin-left: 0.75rem;
-}
-
-.sticky-nav-options {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.nav-item {
-    margin-right: 2rem;
-
-}
-
-@media (max-width:1000px) {
-    .hide {
-        display: none;
-    }
-}
-
-.card {
-    background-color: #232323;
-    width: 150px;
-    border-radius: 0.5rem;
-    padding:1rem;
-    margin-left: 1.5rem;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
     margin-top: 1rem;
+    border: none;
+}
 
+h2 {
+    margin-bottom: 1rem;
 }
 
 .cards-container {
     display: flex;
-    flex-wrap: wrap;
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
 }
 
-.card-img {
-    width: 100%;
+.card {
+    background-color: #181818;
     border-radius: 0.5rem;
+    padding: 1rem;
+    min-width: 190px;
+    margin-right: 1rem;
+    line-height: 1.5rem;
 }
 
-.card-title{
+.card-title {
     font-weight: 600;
 }
 
-.card-into{
-    font: size 0.8rem;
+.card-info {
+    font-size: 0.8rem;
     opacity: 0.8;
 }
 
-.footer{
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.line{
-    width:90%;
-    height:50%;
-    border-top: 1px solid white;
-    opacity:0.4
+.card-img {
+    height: 170px;
+    width: 170px;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
 }
 
-
-
-.album{
-    width: 25%;
-    
-}
-.player{
-    width:50%;
-    
-}
-
-.contors{
-    width:25%;
-    
-}
-
-.player-control-icon{
-    height:1rem;
-    margin-right:1.7rem;
-    opacity:0.7;
-}
-.player-control-icon:hover{
-    opacity: 1;
-}
-
-.music-player{
+.sticky-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 72px;
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    z-index: 999;
+    padding: 0.5rem 0;
 }
 
-.player-controls{
+.sticky-nav i {
+    font-size: 1.75rem;
+}
+
+.sticky-nav-options {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-.playback-bar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.sticky-nav-options i {
+    background-color: black;
+    padding: 0.75rem;
+    border-radius: 50%;
+    margin-left: 0.5rem;
 }
 
-.progress-bar{
-    width:70%;
-    appearance: none;
-    background-color: transparent;
+.sticky-nav .badge {
+    margin-left: 1rem;
+}
+
+.nav-item {
     cursor: pointer;
 }
 
-.progress-bar::-webkit-slider-runnable-track{
-    background-color: #ddd;
-    border-radius:100px;
-    height: 0.2rem;
+.hide {
+    opacity: 0.3;
 }
 
-.progress-bar::-webkit-slider-thumb{
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-control-icon {
+    height: 1.3rem;
+    margin: 0 1rem;
+    opacity: 0.7;
+}
+
+.playback-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.current-time,
+.tot-time {
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.progress-bar {
+    -webkit-appearance: none;
     appearance: none;
-    height: 1rem;
-    width: 1rem;
-    background-color: #1bd760;
-    border-radius:50%;
-    margin-top:-6px;
+    width: 450px;
+    height: 3px;
+    background-color: white;
+    margin: 0 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .hide {
+        display: none;
+    }
+
+    .sticky-nav {
+        justify-content: center;
+    }
 }
